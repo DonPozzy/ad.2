@@ -122,6 +122,9 @@ align-items: center;
     .overlay2{
         border-radius: 10px 10px 0 0 ;
     }
+    .overlay1{
+        border-radius: 0 0 10px 10px ;
+    }
     .div2 img{
         border-radius: 10px 10px 0 0 ;
     }
