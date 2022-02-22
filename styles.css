@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+.card{
+    display: flex;
+    max-width: 750px;
+
+    position: relative;
+    background-color: hsl(233, 47%, 7%);
+}
+.card .div1, .div2{
+    width: 50%;
+}
+.div1{
+    position: relative;
+}
+.div2{
+    position: relative;
+}
+.div2 img{
+    width: 100%;
+    border-radius:0 10px 10px 0;
+}
+.card1{
+    padding: 30px 40px ;
+}
+.font1{
+    font-family: 'Inter', sans-serif;
+}
+.font2{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.p1{
+    color: hsl(0, 0%, 100%);
+    font-size: 27px;
+    
+}
+span{
+    color:hsl(277, 64%, 61%);
+}
+.p2{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 22px 0 0 0;
+    font-size: 14px;
+    padding: 0 15px 0 0;
+}
+.stats{
+    display: flex;
+   justify-content: space-between;
+   padding: 0 70px 0 0;
+    margin: 50px 0 0 0;
+}
+.stat{
+    color: hsl(0, 0%, 100%);
+    font-size: 21px;
+  
+}
+.statcap{
+  color:  hsla(0, 0%, 100%, 0.6);
+  margin-top: 5px;
+  font-size: 11px;
+}
+.overlay1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: hsla(277, 92%, 15%, 0.2);
+    border-radius: 10px 0 0 10px;
+}
+.overlay2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(66, 2, 105, 0.6);
+    border-radius:0 10px 10px 0;
+}
+
+@media screen and (max-width:767px){
+.container{
+    padding: 30px 20px;
+}
+    .card{
+        flex-direction: column-reverse;
+        max-width: 300px;
+       max-height: 700px;
+    }
+    .card .div1, .div2{
+        width: 100%;
+        
+    }
+    .card1{
+        text-align: center;
+        padding: 20px 30px;
+        
+    }
+    .p1{
+        font-size: 22px;
+    }
+    .p2{
+        font-size: 13px;
+    }
+    .stats{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+justify-content: center;
+align-items: center;
+    }
+    .overlay2{
+        border-radius: 10px 10px 0 0 ;
+    }
+    .div2 img{
+        border-radius: 10px 10px 0 0 ;
+    }
+    .div1{
+        border-radius:0 0 10px 10px;
+    }
+    .stat{
+        font-size: 18;
+    }
+    .stats{
+        margin: 15px 0 0 0;
+    }
+    .stats div{
+       margin:  10px 0 0 0;
+    }
+}
+@media screen and (max-width: 467px){
+.container{
+    padding: 20px 20px;
+}
+.card{
+    max-width: 400px;
+    
+}
+}
+    
